@@ -11,7 +11,7 @@ if (isset($_POST['username']) & isset($_POST['password'])){
         $sth->bindParam(':username', $username);
         $sth->bindParam(':password', $password);
         $sth->execute();
-        echo "Inscription Complété";
+        header('location: login.php');
     }catch (PDOException $e){
         print "Erreur !: " . $e->getMessage() . "<br/>";
     }

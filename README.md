@@ -2,6 +2,8 @@
 
 
 Formulaire de base en PHP (PDO) avec connexion et inscription. (Evolutif)  
+Mot de passe chifrée en DEFAULT_PASSWORD donc à l'heure actuel en BCRYPT.  
+
   
   
   

@@ -11,7 +11,9 @@ if (isset($_POST['username']) & isset($_POST['password'])){
         $row = $sth->fetch(PDO::FETCH_ASSOC);
         $hash = $row['password'];
         if (password_verify($_POST['password'], $hash)){
-            echo "<a href='index.php'>Allez à votre Dashboard</a>";
+            $_SESSION['id']   = $row['id'];
+            $_SESSION['username'] = $row['username'];
+            header('Location: index.php');
         }else{
             echo "Mauvais mot de passe our username.";
         }
