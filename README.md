@@ -17,5 +17,8 @@ inscription.php -> Page d'inscription
 
 index.php -> Page index quand on est connecté (innaccessible si pas connecté)  
 
+logout.php -> Page de deconnexion  
+
+
 user.sql -> la structure de la base de donnée à importer  
 
