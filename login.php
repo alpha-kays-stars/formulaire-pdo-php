@@ -15,7 +15,7 @@ if (isset($_POST['username']) & isset($_POST['password'])){
             $_SESSION['username'] = $row['username'];
             header('Location: index.php');
         }else{
-            echo "Mauvais mot de passe our username.";
+            echo "incorrect username or password";
         }
     }catch (PDOException $e){
         print "Erreur !: " . $e->getMessage() . "<br/>";
